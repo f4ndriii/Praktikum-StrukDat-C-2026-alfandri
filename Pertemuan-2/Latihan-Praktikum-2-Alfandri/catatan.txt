@@ -1,0 +1,147 @@
+1. LIST
+Karakteristik:
+
+Mutable (dapat diubah).
+
+Elemen disimpan dalam urutan dan dapat diakses dengan indeks.
+
+Memungkinkan duplikasi nilai.
+
+Diapit dengan tanda kurung siku [ ].
+
+Indeks dimulai dari 0.
+
+Contoh:
+stok = [15, 50, 30, 25, 40]
+
+Method Utama:
+
+append(item) : Menambahkan elemen di akhir list.
+
+insert(index, item) : Menyisipkan elemen pada posisi tertentu.
+
+remove(item) : Menghapus elemen dengan nilai tertentu.
+
+pop(index) : Menghapus dan mengembalikan elemen pada indeks tertentu.
+
+sort() : Mengurutkan list secara ascending.
+
+sort(reverse=True) : Mengurutkan dalam urutan menurun (descending).
+
+reverse() : Membalikkan urutan list.
+
+len() : Menghitung jumlah elemen.
+
+sum() : Menjumlahkan elemen (khusus numerik).
+
+max() / min() : Menemukan nilai terbesar/terkecil.
+
+2. TUPLE
+Karakteristik:
+
+IMMUTABLE (tidak dapat diubah setelah dibuat).
+
+Elemen disimpan dalam urutan dan dapat diakses dengan indeks.
+
+Memungkinkan duplikasi nilai.
+
+Diapit dengan tanda kurung ( ).
+
+Contoh:
+barang = ("B001", "Laptop Gaming", 15000000)
+
+Method Utama:
+
+index(item) : Menemukan indeks dari elemen dengan nilai tertentu.
+
+count(item) : Menghitung berapa kali nilai tertentu muncul.
+
+len() : Menghitung jumlah elemen.
+
+Unpacking : Membongkar isi tuple ke variabel baru.
+
+3. SET
+Karakteristik:
+
+MUTABLE.
+
+Tidak memiliki indeks (unordered).
+
+Tidak memungkinkan duplikasi nilai (otomatis menghapus duplikat).
+
+Diapit dengan tanda kurung kurawal { }.
+
+Sangat berguna untuk operasi matematika himpunan.
+
+Contoh:
+tim_frontend = {"HTML", "CSS", "JavaScript", "React"}
+
+Method Utama:
+
+add(item) : Menambahkan satu elemen.
+
+remove(item) : Menghapus elemen (error jika tidak ada).
+
+discard(item) : Menghapus elemen (tidak error jika tidak ada).
+
+pop() : Menghapus elemen acak.
+
+clear() : Menghapus semua elemen.
+
+len() : Menghitung jumlah elemen unik.
+
+Operasi Himpunan:
+
+set1 & set2 : Irisan (intersection) - elemen yang ada di kedua set.
+
+set1 | set2 : Gabungan (union) - semua elemen dari kedua set.
+
+set1 - set2 : Selisih (difference) - elemen di set1 tapi tidak di set2.
+
+set1 ^ set2 : Simetris difference - elemen yang hanya ada di salah satu set.
+
+4. DICTIONARY
+Karakteristik:
+
+Tipe data koleksi yang MUTABLE.
+
+Menyimpan data dalam pasangan kunci-nilai (key-value).
+
+Diakses menggunakan key, bukan indeks.
+
+Diapit dengan tanda kurung kurawal { }.
+
+Key HARUS unik, tetapi value bisa sama.
+
+Contoh:
+
+Python
+nilai_siswa = {
+    "S01": {"nama": "Dina", "tugas": 80, "uts": 75, "uas": 85},
+    "S02": {"nama": "Abdul Harris", "tugas": 90, "uts": 88, "uas": 92}
+}
+Method Utama:
+
+keys() : Mengembalikan semua key.
+
+values() : Mengembalikan semua value.
+
+items() : Mengembalikan pasangan (key, value).
+
+get(key) : Mengakses nilai dengan key (aman jika key tidak ada).
+
+get(key, default) : Mengembalikan nilai default jika key tidak ada.
+
+pop(key) : Menghapus elemen dan mengembalikan valuenya.
+
+update(dict) : Menggabungkan dictionary lain.
+
+clear() : Menghapus semua elemen.
+
+len() : Menghitung jumlah pasangan key-value.
+
+Akses Elemen:
+
+Langsung: dict[key]
+
+Dengan iterasi: for key, value in dict.items():
